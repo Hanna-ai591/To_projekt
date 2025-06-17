@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fotóalbum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+    <div class="grid" id="photo-grid">
+
+    </div>
+  </main>
+
+ 
+  <div id="viewer" class="viewer hidden">
+    <span class="close" onclick="closeViewer()">&times;</span>
+    <img id="viewer-img" src="" alt="Nagyított kép" style="display: none;" />
+    <video id="viewer-video" controls style="max-width: 90%; max-height: 80%; display: none;" autoplay></video>
+    <a class="prev" onclick="prevImage()">&#10094;</a>
+    <a class="next" onclick="nextImage()">&#10095;</a>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
